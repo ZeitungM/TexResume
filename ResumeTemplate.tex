@@ -1,0 +1,173 @@
+\documentclass[a4paper]{jsbook}	% 基準となるフォントサイズは11pt
+\pagestyle{empty}
+\usepackage{booktabs}
+\usepackage{tabularx}	% tabularx(横幅を指定した表)を使う
+\usepackage{comment}	% ロングコメントに必要
+\usepackage{arydshln}
+\usepackage{emathT}
+\usepackage[dvipdfm]{pict2e}
+\usepackage{graphicx}
+%
+% 使用上の注意:
+% ・通常の環境に合わせてarydshln、emathTパッケージをインストールすること
+% ・セブン-イレブンでのA3プリントに合わせて調節したもの
+%
+% ・誰が使っても合うようには作っていないので、使用者が使いやすいように枠の大きさや数、配置などを自由に調節してください。
+% ・\rule[***zw]{0zw}{***zw} は表の上下の幅を調節してるので、変更するとレイアウトが大きく変わる恐れがあります。
+%
+\begin{document}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-10mm}
+\setlength{\topmargin}{-5mm}
+\setlength{\parindent}{0pt}		%インデントしない
+%
+% 応募者の基本情報
+%     提出日/氏名(苗字・名前・ふりがな)/生年月日(満年齢)/性別
+%
+\begin{minipage}[!h]{110mm}
+	\rule[-3.0zw]{0zw}{4zw}
+	{\Large \bf 履歴書 }{ \bf yyyy年 mm月 dd日現在 }\\ 
+	\begin{tabularx}{100mm}{Ic|llccI}
+		\hlineb
+		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf ふりがな} & \multicolumn{1}{l}{みょうじ} & \multicolumn{3}{XI}{なまえ}
+		\\	\hdashline
+		\multicolumn{1}{Ic|}{\rule[-1.5zw]{0zw}{4zw} \bf 氏名} & \multicolumn{1}{l}{{\LARGE 苗字}} & \multicolumn{3}{XI}{{\LARGE 名前}}
+		\\	\hline
+		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf 生年月日} & \multicolumn{2}{X|}{yyyy年mm月dd日生(満N歳)} & \multicolumn{1}{c|}{ \bf 性別} & \multicolumn{1}{cI}{男・女}
+		\\	\hlineb
+	\end{tabularx}
+\end{minipage}
+\hfill
+% 顔写真
+\begin{minipage}[!t]{0.33\textwidth}
+	\setlength{\unitlength}{1cm}
+		% 写真を別途貼付する場合
+	\begin{picture}(2.5,1)
+		% 711のA3プリントでは(3.0, 4.0)だと29mm×39mmくらいになる
+		\put( 0, -1.5){\framebox(3.103, 4.103){ \bf 写真}}	% 3.0cm*(30/29), 4.0cm*(40/39)
+	\end{picture}
+	% 写真の画像ファイルを使う場合( \usepackage[dvipdfmx]{graphicx} をコメントアウトしておくこと )
+	%\includegraphics[width=3.0cm]{写真のファイル名.eps}
+\end{minipage}
+\\
+% 住所
+% 711のA3プリントでは162mmになる→168mm*(168/162)
+\begin{tabularx}{174.222mm}{Ic|lllXI}
+	\hlineb
+	\rule[-0.5zw]{0zw}{2zw} {\bf ふりがな} & とどうふけん & しくぐん & ちょうそん あざ & \\
+	\hdashline
+	{\bf 現住所} & 〒XXX - YYYY & & & \\
+		   & {\Large 都道府県} & {\Large 市区群} & {\Large 町村 字 xxx番地yyy丁目zzz号} & \\
+	\hline
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf 電話番号} & \multicolumn{4}{XI}{aaa - bbb - cccc} \\
+	\hline
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf 携帯電話} & \multicolumn{4}{XI}{ddd - eeee - ffff} \\
+	\hline	
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf E-mail} & \multicolumn{4}{XI}{ PC: pc-adress } \\
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} } & \multicolumn{4}{XI}{ 携帯電話: phone-adress } \\
+	\hline
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf  } & \multicolumn{4}{XI}{  } \\ % 空欄。適宜載せたい情報を記入してください(GitHubアカウント等)
+	\hlineb
+	%他に記す住所がある場合
+	\rule[-0.5zw]{0zw}{2zw} {\bf ふりがな} & とどうふけん & しくぐん & ちょうそん あざ & \\
+	\hdashline
+	{\bf 現住所} & 〒XXX - YYYY & & & \\
+		   & {\Large 都道府県} & {\Large 市区群} & {\Large 町村 字 xxx番地yyy丁目zzz号} & \\
+	\hline
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf 電話番号 } & \multicolumn{4}{XI}{ phone-number } \\
+	\hlineb
+\end{tabularx}
+\\
+% 学歴・職歴
+\begin{tabularx}{174.222mm}{Ic:c|XI}
+	\hlineb
+	\rule[-0.5zw]{0zw}{2zw}{\bf 年} & {\bf 月} & \multicolumn{1}{cI}{\bf 学歴・職歴} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf 学歴} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & highschool 高校 卒業 \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university 大学 入学 \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university 大学 卒業予定 \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & & \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & & \multicolumn{1}{rI}{以上} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & & \\
+	\hlineb
+\end{tabularx}
+\\
+% 資格・免許
+\begin{tabularx}{174.222mm}{Ic:c|XI}
+	\hlineb
+	\rule[-0.5zw]{0zw}{2zw}{ \bf 年 }&{ \bf 月 }& \multicolumn{1}{cI}{\bf 資格・免許} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & license \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & & \\
+	\hlineb
+\end{tabularx}
+\clearpage
+% ===============================ここから2頁目(右側)=============================================================================================
+%
+\begin{tabularx}{174.222mm}{IXI}
+\hlineb
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 志望動機}
+	\\	\hline
+	%------------------ここに書く-----------------
+	% 空欄のときの見栄えのために改行を入れているので、記入時に適宜削除のこと。
+	% コンパイルしたときに、記述量に依らず表内の行数一定にする方法を募集中…
+	1 \\
+	2 \\
+	3 \\
+	4 \\
+	5 \\
+	6 \\
+	7 \\
+	8 \\
+	9 \\
+	\hlineb
+%
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 長所・特徴}
+	\\ \hline
+	1 \\
+	2 \\
+	3 \\
+	4 \\
+	5 \\
+	6 \\
+	7 \\
+	8 \\
+	\hlineb
+%
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 趣味・特技}
+	\\ \hline
+	1 \\
+	2 \\
+	3 \\
+	4 \\
+	5 \\
+	6 \\
+	7 \\
+	\hlineb
+%
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述1}
+	\\ \hline
+	1 \\
+	2 \\
+	3 \\
+	4 \\
+	5 \\
+	% ここまで
+	\hlineb
+%
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述2}
+	\\ \hline
+	1 \\
+	2 \\
+	3 \\
+	4 \\
+	5 \\
+	6 \\
+	\hlineb
+\end{tabularx}
+
+\end{document}
