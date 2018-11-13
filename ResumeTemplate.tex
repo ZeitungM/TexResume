@@ -41,13 +41,12 @@
 % 顔写真
 \begin{minipage}[!t]{0.33\textwidth}
 	\setlength{\unitlength}{1cm}
-		% 写真を別途貼付する場合
-	\begin{picture}(2.5,1)
+	%\begin{picture}(2.5,1) % 写真を別途貼付する場合の枠を描画する
 		% 711のA3プリントでは(3.0, 4.0)だと29mm×39mmくらいになる
-		\put( 0, -1.5){\framebox(3.103, 4.103){ \bf 写真}}	% 3.0cm*(30/29), 4.0cm*(40/39)
-	\end{picture}
-	% 写真の画像ファイルを使う場合( \usepackage[dvipdfmx]{graphicx} をコメントアウトしておくこと )
-	%\includegraphics[width=3.0cm]{写真のファイル名.eps}
+	%	\put( 0, -1.5){\framebox(3.103, 4.103){ \bf 写真}}	% 3.0cm*(30/29), 4.0cm*(40/39)
+	%\end{picture}
+
+	\includegraphics[width=3.0cm]{lenna.eps} % 画像ファイルを使う場合
 \end{minipage}
 \\
 % 住所
@@ -85,10 +84,10 @@
 	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf 学歴} \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & highschool 高校 卒業 \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university 大学 入学 \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university 大学 卒業予定 \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university 大学 卒業 \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}  &  &  \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf 職歴} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & company 入社 \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & & \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
@@ -110,7 +109,7 @@
 %
 \begin{tabularx}{174.222mm}{IXI}
 \hlineb
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 志望動機}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述1}
 	\\	\hline
 	%------------------ここに書く-----------------
 	% 空欄のときの見栄えのために改行を入れているので、記入時に適宜削除のこと。
@@ -126,7 +125,7 @@
 	9 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 長所・特徴}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述2}
 	\\ \hline
 	1 \\
 	2 \\
@@ -138,7 +137,7 @@
 	8 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 趣味・特技}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述3}
 	\\ \hline
 	1 \\
 	2 \\
@@ -149,7 +148,7 @@
 	7 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述1}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述4}
 	\\ \hline
 	1 \\
 	2 \\
@@ -159,7 +158,7 @@
 	% ここまで
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述2}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf 自由記述5}
 	\\ \hline
 	1 \\
 	2 \\
