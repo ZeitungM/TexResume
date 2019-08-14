@@ -1,119 +1,119 @@
-\documentclass[a4paper]{jsbook}	% Šî€‚Æ‚È‚éƒtƒHƒ“ƒgƒTƒCƒY‚Í11pt
+\documentclass[a4paper]{jsbook}	% åŸºæº–ã¨ãªã‚‹ãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã¯11pt
 \pagestyle{empty}
 \usepackage{booktabs}
-\usepackage{tabularx}	% tabularx(‰¡•‚ğw’è‚µ‚½•\)‚ğg‚¤
-\usepackage{comment}	% ƒƒ“ƒOƒRƒƒ“ƒg‚É•K—v
+\usepackage{tabularx}	% tabularx(æ¨ªå¹…ã‚’æŒ‡å®šã—ãŸè¡¨)ã‚’ä½¿ã†
+\usepackage{comment}	% ãƒ­ãƒ³ã‚°ã‚³ãƒ¡ãƒ³ãƒˆã«å¿…è¦
 \usepackage{arydshln}
 \usepackage{emathT}
 \usepackage[dvipdfm]{pict2e}
 \usepackage{graphicx}
 %
-% g—pã‚Ì’ˆÓ:
-% E’Êí‚ÌŠÂ‹«‚É‡‚í‚¹‚ÄarydshlnAemathTƒpƒbƒP[ƒW‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚é‚±‚Æ
-% EƒZƒuƒ“-ƒCƒŒƒuƒ“‚Å‚ÌA3ƒvƒŠƒ“ƒg‚É‡‚í‚¹‚Ä’²ß‚µ‚½‚à‚Ì
+% ä½¿ç”¨ä¸Šã®æ³¨æ„:
+% ãƒ»é€šå¸¸ã®ç’°å¢ƒã«åˆã‚ã›ã¦arydshlnã€emathTãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã“ã¨
+% ãƒ»ã‚»ãƒ–ãƒ³-ã‚¤ãƒ¬ãƒ–ãƒ³ã§ã®A3ãƒ—ãƒªãƒ³ãƒˆã«åˆã‚ã›ã¦èª¿ç¯€ã—ãŸã‚‚ã®
 %
-% E’N‚ªg‚Á‚Ä‚à‡‚¤‚æ‚¤‚É‚Íì‚Á‚Ä‚¢‚È‚¢‚Ì‚ÅAg—pÒ‚ªg‚¢‚â‚·‚¢‚æ‚¤‚É˜g‚Ì‘å‚«‚³‚â”A”z’u‚È‚Ç‚ğ©—R‚É’²ß‚µ‚Ä‚­‚¾‚³‚¢B
-% E\rule[***zw]{0zw}{***zw} ‚Í•\‚Ìã‰º‚Ì•‚ğ’²ß‚µ‚Ä‚é‚Ì‚ÅA•ÏX‚·‚é‚ÆƒŒƒCƒAƒEƒg‚ª‘å‚«‚­•Ï‚í‚é‹°‚ê‚ª‚ ‚è‚Ü‚·B
+% ãƒ»èª°ãŒä½¿ã£ã¦ã‚‚åˆã†ã‚ˆã†ã«ã¯ä½œã£ã¦ã„ãªã„ã®ã§ã€ä½¿ç”¨è€…ãŒä½¿ã„ã‚„ã™ã„ã‚ˆã†ã«æ ã®å¤§ãã•ã‚„æ•°ã€é…ç½®ãªã©ã‚’è‡ªç”±ã«èª¿ç¯€ã—ã¦ãã ã•ã„ã€‚
+% ãƒ»\rule[***zw]{0zw}{***zw} ã¯è¡¨ã®ä¸Šä¸‹ã®å¹…ã‚’èª¿ç¯€ã—ã¦ã‚‹ã®ã§ã€å¤‰æ›´ã™ã‚‹ã¨ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆãŒå¤§ããå¤‰ã‚ã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚
 %
 \begin{document}
 \setlength{\oddsidemargin}{0mm}
 \setlength{\evensidemargin}{-10mm}
 \setlength{\topmargin}{-5mm}
-\setlength{\parindent}{0pt}		%ƒCƒ“ƒfƒ“ƒg‚µ‚È‚¢
+\setlength{\parindent}{0pt}		%ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã—ãªã„
 %
-% ‰•åÒ‚ÌŠî–{î•ñ
-%     ’ño“ú/–¼(•cšE–¼‘OE‚Ó‚è‚ª‚È)/¶”NŒ“ú(–”N—î)/«•Ê
+% å¿œå‹Ÿè€…ã®åŸºæœ¬æƒ…å ±
+%     æå‡ºæ—¥/æ°å(è‹—å­—ãƒ»åå‰ãƒ»ãµã‚ŠãŒãª)/ç”Ÿå¹´æœˆæ—¥(æº€å¹´é½¢)/æ€§åˆ¥
 %
 \begin{minipage}[!h]{110mm}
 	\rule[-3.0zw]{0zw}{4zw}
-	{\Large \bf —š—ğ‘ }{ \bf yyyy”N mmŒ dd“úŒ»İ }\\ 
+	{\Large \bf å±¥æ­´æ›¸ }{ \bf yyyyå¹´ mmæœˆ ddæ—¥ç¾åœ¨ }\\ 
 	\begin{tabularx}{100mm}{Ic|llccI}
 		\hlineb
-		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf ‚Ó‚è‚ª‚È} & \multicolumn{1}{l}{‚İ‚å‚¤‚¶} & \multicolumn{3}{XI}{‚È‚Ü‚¦}
+		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf ãµã‚ŠãŒãª} & \multicolumn{1}{l}{ã¿ã‚‡ã†ã˜} & \multicolumn{3}{XI}{ãªã¾ãˆ}
 		\\	\hdashline
-		\multicolumn{1}{Ic|}{\rule[-1.5zw]{0zw}{4zw} \bf –¼} & \multicolumn{1}{l}{{\LARGE •cš}} & \multicolumn{3}{XI}{{\LARGE –¼‘O}}
+		\multicolumn{1}{Ic|}{\rule[-1.5zw]{0zw}{4zw} \bf æ°å} & \multicolumn{1}{l}{{\LARGE è‹—å­—}} & \multicolumn{3}{XI}{{\LARGE åå‰}}
 		\\	\hline
-		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf ¶”NŒ“ú} & \multicolumn{2}{X|}{yyyy”NmmŒdd“ú¶(–NÎ)} & \multicolumn{1}{c|}{ \bf «•Ê} & \multicolumn{1}{cI}{’jE—}
+		\multicolumn{1}{Ic|}{\rule[-0.5zw]{0zw}{2zw} \bf ç”Ÿå¹´æœˆæ—¥} & \multicolumn{2}{X|}{yyyyå¹´mmæœˆddæ—¥ç”Ÿ(æº€Næ­³)} & \multicolumn{1}{c|}{ \bf æ€§åˆ¥} & \multicolumn{1}{cI}{ç”·ãƒ»å¥³}
 		\\	\hlineb
 	\end{tabularx}
 \end{minipage}
 \hfill
-% ŠçÊ^
+% é¡”å†™çœŸ
 \begin{minipage}[!t]{0.33\textwidth}
 	\setlength{\unitlength}{1cm}
-	%\begin{picture}(2.5,1) % Ê^‚ğ•Ê“r“\•t‚·‚éê‡‚Ì˜g‚ğ•`‰æ‚·‚é
-		% 711‚ÌA3ƒvƒŠƒ“ƒg‚Å‚Í(3.0, 4.0)‚¾‚Æ29mm~39mm‚­‚ç‚¢‚É‚È‚é
-	%	\put( 0, -1.5){\framebox(3.103, 4.103){ \bf Ê^}}	% 3.0cm*(30/29), 4.0cm*(40/39)
+	%\begin{picture}(2.5,1) % å†™çœŸã‚’åˆ¥é€”è²¼ä»˜ã™ã‚‹å ´åˆã®æ ã‚’æç”»ã™ã‚‹
+		% 711ã®A3ãƒ—ãƒªãƒ³ãƒˆã§ã¯(3.0, 4.0)ã ã¨29mmÃ—39mmãã‚‰ã„ã«ãªã‚‹
+	%	\put( 0, -1.5){\framebox(3.103, 4.103){ \bf å†™çœŸ}}	% 3.0cm*(30/29), 4.0cm*(40/39)
 	%\end{picture}
 
-	\includegraphics[width=3.0cm]{lenna.eps} % ‰æ‘œƒtƒ@ƒCƒ‹‚ğg‚¤ê‡
+	\includegraphics[width=3.0cm]{lenna.eps} % ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ã†å ´åˆ
 \end{minipage}
 \\
-% ZŠ
-% 711‚ÌA3ƒvƒŠƒ“ƒg‚Å‚Í162mm‚É‚È‚é¨168mm*(168/162)
+% ä½æ‰€
+% 711ã®A3ãƒ—ãƒªãƒ³ãƒˆã§ã¯162mmã«ãªã‚‹â†’168mm*(168/162)
 \begin{tabularx}{174.222mm}{Ic|lllXI}
 	\hlineb
-	\rule[-0.5zw]{0zw}{2zw} {\bf ‚Ó‚è‚ª‚È} & ‚Æ‚Ç‚¤‚Ó‚¯‚ñ & ‚µ‚­‚®‚ñ & ‚¿‚å‚¤‚»‚ñ ‚ ‚´ & \\
+	\rule[-0.5zw]{0zw}{2zw} {\bf ãµã‚ŠãŒãª} & ã¨ã©ã†ãµã‘ã‚“ & ã—ããã‚“ & ã¡ã‚‡ã†ãã‚“ ã‚ã– & \\
 	\hdashline
-	{\bf Œ»ZŠ} & §XXX - YYYY & & & \\
-		   & {\Large “s“¹•{Œ§} & {\Large s‹æŒQ} & {\Large ’¬‘º š xxx”Ô’nyyy’š–Úzzz†} & \\
+	{\bf ç¾ä½æ‰€} & ã€’XXX - YYYY & & & \\
+		   & {\Large éƒ½é“åºœçœŒ} & {\Large å¸‚åŒºç¾¤} & {\Large ç”ºæ‘ å­— xxxç•ªåœ°yyyä¸ç›®zzzå·} & \\
 	\hline
-	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf “d˜b”Ô†} & \multicolumn{4}{XI}{aaa - bbb - cccc} \\
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf é›»è©±ç•ªå·} & \multicolumn{4}{XI}{aaa - bbb - cccc} \\
 	\hline
-	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf Œg‘Ñ“d˜b} & \multicolumn{4}{XI}{ddd - eeee - ffff} \\
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf æºå¸¯é›»è©±} & \multicolumn{4}{XI}{ddd - eeee - ffff} \\
 	\hline	
 	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf E-mail} & \multicolumn{4}{XI}{ PC: pc-adress } \\
-	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} } & \multicolumn{4}{XI}{ Œg‘Ñ“d˜b: phone-adress } \\
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} } & \multicolumn{4}{XI}{ æºå¸¯é›»è©±: phone-adress } \\
 	\hline
-	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf  } & \multicolumn{4}{XI}{  } \\ % ‹ó—“B“K‹XÚ‚¹‚½‚¢î•ñ‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢(GitHubƒAƒJƒEƒ“ƒg“™)
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf  } & \multicolumn{4}{XI}{  } \\ % ç©ºæ¬„ã€‚é©å®œè¼‰ã›ãŸã„æƒ…å ±ã‚’è¨˜å…¥ã—ã¦ãã ã•ã„(GitHubã‚¢ã‚«ã‚¦ãƒ³ãƒˆç­‰)
 	\hlineb
-	%‘¼‚É‹L‚·ZŠ‚ª‚ ‚éê‡
-	\rule[-0.5zw]{0zw}{2zw} {\bf ‚Ó‚è‚ª‚È} & ‚Æ‚Ç‚¤‚Ó‚¯‚ñ & ‚µ‚­‚®‚ñ & ‚¿‚å‚¤‚»‚ñ ‚ ‚´ & \\
+	%ä»–ã«è¨˜ã™ä½æ‰€ãŒã‚ã‚‹å ´åˆ
+	\rule[-0.5zw]{0zw}{2zw} {\bf ãµã‚ŠãŒãª} & ã¨ã©ã†ãµã‘ã‚“ & ã—ããã‚“ & ã¡ã‚‡ã†ãã‚“ ã‚ã– & \\
 	\hdashline
-	{\bf Œ»ZŠ} & §XXX - YYYY & & & \\
-		   & {\Large “s“¹•{Œ§} & {\Large s‹æŒQ} & {\Large ’¬‘º š xxx”Ô’nyyy’š–Úzzz†} & \\
+	{\bf ç¾ä½æ‰€} & ã€’XXX - YYYY & & & \\
+		   & {\Large éƒ½é“åºœçœŒ} & {\Large å¸‚åŒºç¾¤} & {\Large ç”ºæ‘ å­— xxxç•ªåœ°yyyä¸ç›®zzzå·} & \\
 	\hline
-	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf “d˜b”Ô† } & \multicolumn{4}{XI}{ phone-number } \\
+	\multicolumn{1}{Ic|}{ \rule[-0.5zw]{0zw}{2zw} \bf é›»è©±ç•ªå· } & \multicolumn{4}{XI}{ phone-number } \\
 	\hlineb
 \end{tabularx}
 \\
-% Šw—ğEE—ğ
+% å­¦æ­´ãƒ»è·æ­´
 \begin{tabularx}{174.222mm}{Ic:c|XI}
 	\hlineb
-	\rule[-0.5zw]{0zw}{2zw}{\bf ”N} & {\bf Œ} & \multicolumn{1}{cI}{\bf Šw—ğEE—ğ} \\	\hline
-	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf Šw—ğ} \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & highschool ‚Z ‘²‹Æ \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university ‘åŠw “üŠw \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university ‘åŠw ‘²‹Æ \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}{\bf å¹´} & {\bf æœˆ} & \multicolumn{1}{cI}{\bf å­¦æ­´ãƒ»è·æ­´} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf å­¦æ­´} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & highschool é«˜æ ¡ å’æ¥­ \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university å¤§å­¦ å…¥å­¦ \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & university å¤§å­¦ å’æ¥­ \\	\hline
 	\rule[-0.5zw]{0zw}{2zw}  &  &  \\	\hline
-	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf E—ğ} \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & company “üĞ \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}  &  & \multicolumn{1}{cI}{\bf è·æ­´} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & company å…¥ç¤¾ \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & & \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & &  \\	\hline
-	\rule[-0.5zw]{0zw}{2zw} & & \multicolumn{1}{rI}{ˆÈã} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw} & & \multicolumn{1}{rI}{ä»¥ä¸Š} \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & & \\
 	\hlineb
 \end{tabularx}
 \\
-% ‘ŠiE–Æ‹–
+% è³‡æ ¼ãƒ»å…è¨±
 \begin{tabularx}{174.222mm}{Ic:c|XI}
 	\hlineb
-	\rule[-0.5zw]{0zw}{2zw}{ \bf ”N }&{ \bf Œ }& \multicolumn{1}{cI}{\bf ‘ŠiE–Æ‹–} \\	\hline
+	\rule[-0.5zw]{0zw}{2zw}{ \bf å¹´ }&{ \bf æœˆ }& \multicolumn{1}{cI}{\bf è³‡æ ¼ãƒ»å…è¨±} \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} yyyy & mm & license \\	\hline
 	\rule[-0.5zw]{0zw}{2zw} & & \\
 	\hlineb
 \end{tabularx}
 \clearpage
-% ===============================‚±‚±‚©‚ç2•Å–Ú(‰E‘¤)=============================================================================================
+% ===============================ã“ã“ã‹ã‚‰2é ç›®(å³å´)=============================================================================================
 %
 \begin{tabularx}{174.222mm}{IXI}
 \hlineb
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf ©—R‹Lq1}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf è‡ªç”±è¨˜è¿°1}
 	\\	\hline
-	%------------------‚±‚±‚É‘‚­-----------------
-	% ‹ó—“‚Ì‚Æ‚«‚ÌŒ©‰h‚¦‚Ì‚½‚ß‚É‰üs‚ğ“ü‚ê‚Ä‚¢‚é‚Ì‚ÅA‹L“ü‚É“K‹Xíœ‚Ì‚±‚ÆB
-	% ƒRƒ“ƒpƒCƒ‹‚µ‚½‚Æ‚«‚ÉA‹Lq—Ê‚ÉˆË‚ç‚¸•\“à‚Ìs”ˆê’è‚É‚·‚é•û–@‚ğ•åW’†c
+	%------------------ã“ã“ã«æ›¸ã-----------------
+	% ç©ºæ¬„ã®ã¨ãã®è¦‹æ „ãˆã®ãŸã‚ã«æ”¹è¡Œã‚’å…¥ã‚Œã¦ã„ã‚‹ã®ã§ã€è¨˜å…¥æ™‚ã«é©å®œå‰Šé™¤ã®ã“ã¨ã€‚
+	% ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ãŸã¨ãã«ã€è¨˜è¿°é‡ã«ä¾ã‚‰ãšè¡¨å†…ã®è¡Œæ•°ä¸€å®šã«ã™ã‚‹æ–¹æ³•ã‚’å‹Ÿé›†ä¸­â€¦
 	1 \\
 	2 \\
 	3 \\
@@ -125,7 +125,7 @@
 	9 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf ©—R‹Lq2}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf è‡ªç”±è¨˜è¿°2}
 	\\ \hline
 	1 \\
 	2 \\
@@ -137,7 +137,7 @@
 	8 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf ©—R‹Lq3}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf è‡ªç”±è¨˜è¿°3}
 	\\ \hline
 	1 \\
 	2 \\
@@ -148,17 +148,17 @@
 	7 \\
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf ©—R‹Lq4}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf è‡ªç”±è¨˜è¿°4}
 	\\ \hline
 	1 \\
 	2 \\
 	3 \\
 	4 \\
 	5 \\
-	% ‚±‚±‚Ü‚Å
+	% ã“ã“ã¾ã§
 	\hlineb
 %
-	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf ©—R‹Lq5}
+	\multicolumn{1}{IcI}{\rule[-0.5zw]{0zw}{2zw} \bf è‡ªç”±è¨˜è¿°5}
 	\\ \hline
 	1 \\
 	2 \\
